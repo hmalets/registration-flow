@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.required-marker {
+  color: red;
+  font-weight: bolder;
+}
+
+.snack-bar {
+  &.mat-snack-bar-container {
+    min-height: 40px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+  }
+}

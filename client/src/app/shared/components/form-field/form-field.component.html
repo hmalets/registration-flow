@@ -1,0 +1,16 @@
+<mat-label *ngIf="label">
+  {{ label }}
+  <span *ngIf="required" class="required-marker">*</span>
+</mat-label>
+
+<mat-form-field appearance="outline">
+  <input #inputElement matInput [type]="type" [placeholder]="placeholder" [formControl]="control" />
+  <mat-error *ngIf="control.invalid">{{ control.errors | controlErrorMessage }}</mat-error>
+  <button
+    *ngIf="type === 'password'"
+    type="button"
+    mat-icon-button
+    matSuffix
+    [showPassword]="inputElement"
+  ></button>
+</mat-form-field>

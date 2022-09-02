@@ -1,0 +1,12 @@
+@import "../../../../../styles/variables";
+
+:host {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-button {
+  width: $button-width;
+}

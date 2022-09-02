@@ -1,0 +1,27 @@
+@import "../../../../../styles/breakpoints";
+@import "../../../../../styles/variables";
+
+.page {
+  padding: 20px;
+}
+
+form {
+  padding: 20px 0;
+  width: 100%;
+
+  @include tablet {
+    width: 80%;
+  }
+
+  @include desktop {
+    width: 50%;
+  }
+}
+
+.submit-button-container {
+  text-align: center;
+}
+
+.submit-button {
+  width: $button-width;
+}
